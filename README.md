@@ -200,7 +200,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 这次，头发显得更加杂乱，证明加权起到了作用。
 
->关于权重的讨论
+>关于加权语法的讨论
 
 你可能见过在Web-UI中有着这样的加权语法：
 
