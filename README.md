@@ -68,6 +68,8 @@ E-mail：3119964735@qq.com
 
 『Just be waiting for me.』
 
+---
+
 ## 探索篇：打开魔法世界的大门
 >The way stretches endless ahead, I shall search heaven and earth.
 > 
@@ -146,6 +148,8 @@ masterpiece, best quality, highly detailed, extremely detailed, sketch, 1girl, b
 
 看着画中的美少女，你有些激动——这时，之前召唤出的黑长直少女明显有些生气，『What are you doing, my master?』，『Uh-uh, I'm just researching the magic, haha......』
 
+---
+
 ### 魔导师入门
 接连几天，你都在家闭门不出并与Alice一起研究魔术。（顺带一提，之前召唤出的黑长直少女你为其取名为Alice。）
 
@@ -215,6 +219,8 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 可以和第一次不加权的图片做对比，发现并没有明显效果。
 
 通过多次实验，我们可以得出结论：**此语法在Naifu中并不适用**。
+
+---
 
 ### 魔导师进阶
 在学习了数日的魔术后，你信心大增，因为你已经离成为大魔导师的梦想更近一步。
