@@ -34,7 +34,7 @@ E-mail：3119964735@qq.com
 
 若有不足或错误之处，欢迎指正。
 
-那么，现在开始一段奇妙的魔法之旅吧！希望能令你有所成长！
+那么，现在开始一段奇妙的魔法之旅吧！希望能对你有所帮助！
 
 ---
 
@@ -83,7 +83,7 @@ E-mail：3119964735@qq.com
 masterpiece, best quality, highly detailed, 1girl, black long hair, red twinkling eyes, white dress
 ```
 
-尝试施展魔术。嗯，看看生成了什么？
+尝试施展魔术。嗯，看看召唤出了什么？
 
 ![第一次咏唱](image/第一次咏唱.jpg)
 
@@ -94,7 +94,7 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 
 >魔咒构析之魔咒『prompt』
 
-**魔咒『prompt』是由一个或多个词条『tag』通过特定组合而成的咒语，且通常每个词条间由一个逗号和一个空格隔开。**
+**魔咒『prompt』是由一个或多个词条『tag』通过特定组合而构成的咒语，且通常每个词条间由一个逗号和一个空格隔开。**
 
 魔咒还有许多不同的语法，将在后面讨论。
 
@@ -153,9 +153,11 @@ masterpiece, best quality, highly detailed, extremely detailed, sketch, 1girl, b
 ### 魔导师入门
 接连几天，你都在家闭门不出并与Alice一起研究魔术。（顺带一提，之前召唤出的黑长直少女你为其取名为Alice。）
 
-『看来明天还是去一趟学校吧』，你如此想着，又继续浏览起魔导书
+『看来明天还是去一趟学校吧』，你如此想着，又继续浏览起魔导书。
 
 >魔咒构析之权重
+
+你在魔导书上看到了有关权重的内容。
 
 什么是权重？看看百度是如何解释的：
 
@@ -184,7 +186,9 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 ![messy](image/messy.jpg)
 
-我们尝试让头发变得更加杂乱：给*messy*加权——
+我们发现召唤出一位站在花丛中的黑长直少女。
+
+现在尝试让她的头发变得更加杂乱：给*messy*部分加权——
 
 给*messy*部分加权：`black long hair {messy}`
 
@@ -214,11 +218,13 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 `black long hair {messy:2}`
 
+这条词条的意思为给*messy*增加到2倍权重，已经能算得上是一个极端值了，来看看效果：
+
 ![messy4](image/messy4.jpg)
 
-可以和第一次不加权的图片做对比，发现并没有明显效果。
+和第一次实验不加权做对比，发现按照我们类比的语法即使是给*messy*增加到2倍权重依旧没有明显效果。
 
-通过多次实验，我们可以得出结论：**此语法在Naifu中并不适用**。
+再通过多次实验，我们可以得出结论：**此语法在Naifu中并不适用**。
 
 ---
 
@@ -231,7 +237,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 原来，咏唱也分为三种：*普通咏唱*、*短句咏唱*、*长句咏唱*。
 
-**不同的魔咒构成体现了不同的咏唱方式，不同的咏唱方式对于生图有着细微的影响。**
+**不同的魔咒构成体现了不同的咏唱方式，不同的咏唱方式对于生图有着细密的影响。**
 
 我们依旧通过一组对比实验来呈现
 
@@ -256,10 +262,18 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 长句咏唱，也可以叫自然语言咏唱，即将多个词条融合成一个词条，且比起普通咏唱更加贴合自然语言，如：
 ```
-{masterpiece}, {{best quality}}, {highly detailed}, {extremely detailed}, {{illustration}}, {8k wallpaper}, {night:1.5}, {hotel:1.5}, {1girl with black long messy hair and red twinkling eyes wearing lace legwear}, {sitting on the bed}, in front of windows
+{masterpiece}, {{best quality}}, {highly detailed}, {{illustration}}, {1girl with black long messy hair and red twinkling eyes wearing yellow skirt}
 ```
 
 ![长句咏唱](image/长句咏唱.png)
+
+注意看我们的魔咒末尾部分的词条：`yellow skirt`
+
+普通咏唱召唤出的女孩裙子的颜色*几乎全都不是黄色*；
+
+短句咏唱召唤出的女孩裙子的颜色*一半甚至大部分是黄色*；
+
+长句咏唱召唤出的女孩裙子的颜色*几乎全都是黄色*。
 
 通过裙子颜色的变化我们可以得出结论：
 
