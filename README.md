@@ -114,7 +114,7 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 ```
 其中像 *masterpiece*、*1 girl* 等都算是一个词条，而所有词条组合起来，就是一段魔咒。
 
-注：在Naifu中，魔咒『prompt』 被称为 *Tagging* ，而词条『tag』没有既定的称呼。在本书中，同一使用 *魔咒* 与 *词条* 来定义。
+注：在Naifu中，魔咒『prompt』 被称为 *Tagging* ，而词条『tag』被称为 *tags*。在本书中，同一使用 *魔咒* 与 *词条* 来定义。
 
 >魔咒构析之起手式
 
@@ -233,7 +233,9 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 ### 魔导师进阶
 在学习了数日的魔术后，你信心大增，因为你已经离成为大魔导师的梦想更近一步。
 
-看着趾高气昂的你，Alice突然打岔，『Don't be proud, my master. There are different kinds of ways to chant, you know?』
+看着趾高气昂的你，Alice突然打岔，
+
+『Don't be proud, my master. There are different kinds of ways to chant, you know?』
 
 『Uh, I know. Then what are those?』
 
@@ -284,3 +286,85 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 **短句式咏唱介于二者之间。**
 
+---
+
+## 进阶篇：各种魔咒构析理论
+>Ask the canal that clear so, to have the source of running water.
+> 
+>问渠那得清如许，为有源头活水来。
+
+
+### 空间缠绕理论
+自迈入魔导师的大门以来，你一直都注重魔术的实践与运用而忽略了其理论知识，这也使你进入瓶颈。
+这次，你直接向学校请了一个月长假而潜心研究魔术，甚至达到了废寝忘食的地步。对此，Alice对你有些担心。
+
+『You'd better have a rest, my master.』
+
+『Yes, I know. But it doesn't work at all even though I've already tried my best......』
+
+『Maybe you should try to meditate, my master.』
+
+>魔咒构析之空间缠绕理论
+
+NovelAI是按照什么顺序来识别魔咒『prompt』并以此生成图像的呢？
+
+答案是**从左往右**，NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『tag』。
+根据实践证明及现有理论我们推导出了 *空间缠绕理论* 。
+
+**空间缠绕理论：在魔咒中，越靠前的词条将会越受到魔术的眷顾，而越靠后的词条则会成越成为点缀物。**
+
+现在我们来做一个著名的 *少女与壶实验* 检验此理论，看到下面的魔咒：
+```
+{masterpiece}, 1girl, white hair, red eyes, {{pot}}
+```
+
+![少女与壶](image/少女与壶.jpg)
+
+现在我们将词条`tag`放在女孩部分前面试试：
+```
+{masterpiece}, {{pot}}, 1girl, white hair, red eyes
+```
+
+![少女与壶2](image/少女与壶2.jpg)
+
+我们发现壶虽然变得更加精致一些，但是总体区别并不是很明显，通过多次试验，我们推测：
+
+**空间扰缠绕论在Naifu中体现并不明显，但此理论是否会在其他因素如：具有更加复杂的词条的影响下起效还有待考证。**
+
+但是为了魔咒的可读性，建议还是按照分类规范书写词条顺序。
+
+注：此部分理论与实验均参考 *元素同典：确实不完全科学的魔导书* 的 *魔法公式入门* 部分。
+
+>魔咒构析之元素缠绕理论
+
+NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生不同的效果。有些词条可能会相互关联产生更加强烈的效果，而有些相对的词条则可能会相互排斥抵消效果。
+
+我们现有*元素缠绕理论*：
+
+**元素缠绕理论一：词条间的距离会影响它们的关联性。**
+
+我们依旧来做一组对照实验，看到下面的魔咒：
+```
+{masterpiece}, best quality, {highly detailed}, {{illustration}}, 1girl, loli, white hair, red eyes, flowers
+```
+
+![girl with flowers](image/girl with flowers.jpg)
+
+我们发现词条`flowers`与描述少女部分的词条相融合导致女孩的头上出现了花饰，这就是词条间的关联性造成的，原因是词条间的距离过近导致其相融合。
+
+那么如果我们不想它们之间相互融合该怎么办呢？这个时候就要介绍一种新的词条—— **占位词『token tag』** 了 。
+
+>魔法构析之占位词『token tag』
+
+**占位词『token tag』是由一个或多个字符组成的具有无意义的短语，常用来加强词条间的独立性。**
+
+介绍一个常用占位词：`ai is sb`，从某种意义上说它也算是有意义的呢（笑）。
+
+现在我们在词条`flowers`前插入一个占位词：
+```
+{masterpiece}, best quality, {highly detailed}, {{illustration}}, 1girl, loli, white hair, red eyes, ai is sb, flowers
+```
+
+![girl without flowers](image/girl without flowers.jpg)
+
+果然，这次少女的头上没有出现花饰，证明占位词起到了作用。
