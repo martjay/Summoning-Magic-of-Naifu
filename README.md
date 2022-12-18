@@ -96,7 +96,7 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 
 **魔咒『prompt』是由一个或多个词条『tag』通过特定组合而成的咒语，且通常每个词条间由一个逗号和一个空格隔开。**
 
-魔咒构析还有许多不同的语法，将在后面讨论。
+魔咒还有许多不同的语法，将在后面讨论。
 
 总之，魔咒对于召唤术有着重要且直接的影响。
 
