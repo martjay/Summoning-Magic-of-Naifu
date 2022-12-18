@@ -88,13 +88,13 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 ![第一次咏唱](image/第一次咏唱.jpg)
 
 哇嗯，你现在可能会直呼**Good job!**
-没错，魔法似乎施展成功了，一位标致的黑长直出现在眼前。
+没错，魔术似乎施展成功了，一位标致的黑长直出现在眼前。
 
 不过，现在可不是放飞自我的时候。你翻开魔导书，开始构析魔咒。
 
 >魔咒构析之魔咒『prompt』
 
-**魔咒『prompt』是由一个或多个词条『tag』通过特定组合而构成的咒语，且通常每个词条间由一个逗号和一个空格隔开。**
+**魔咒『prompt』是由一个或多个词条『tag』通过特定组合而构成的，且通常每个词条间由一个逗号和一个空格隔开。**
 
 魔咒还有许多不同的语法，将在后面讨论。
 
@@ -113,6 +113,8 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 masterpiece, best quality, highly detailed, 1girl, black long hair, red twinkling eyes, white dress
 ```
 其中像 *masterpiece*、*1 girl* 等都算是一个词条，而所有词条组合起来，就是一段魔咒。
+
+注：在Naifu中，魔咒『prompt』 被称为 *Tagging* ，而词条『tag』没有既定的称呼。在本书中，同一使用 *魔咒* 与 *词条* 来定义。
 
 >魔咒构析之起手式
 
@@ -186,7 +188,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 ![messy](image/messy.jpg)
 
-我们发现召唤出一位站在花丛中的黑长直少女。
+我们发现召唤出一幅画：一位站在花丛中的黑长直少女。
 
 现在尝试让她的头发变得更加杂乱：给*messy*部分加权——
 
@@ -222,7 +224,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 ![messy4](image/messy4.jpg)
 
-和第一次实验不加权做对比，发现按照我们类比的语法即使是给*messy*增加到2倍权重依旧没有明显效果。
+和第一次不加权做对比，发现按照我们类比的语法即使是给*messy*增加到2倍权重依旧没有明显效果。
 
 再通过多次实验，我们可以得出结论：**此语法在Naifu中并不适用**。
 
@@ -269,10 +271,9 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 注意看我们的魔咒末尾部分的词条：`yellow skirt`
 
+我们发现：
 普通咏唱召唤出的女孩裙子的颜色*几乎全都不是黄色*；
-
 短句咏唱召唤出的女孩裙子的颜色*一半甚至大部分是黄色*；
-
 长句咏唱召唤出的女孩裙子的颜色*几乎全都是黄色*。
 
 通过裙子颜色的变化我们可以得出结论：
