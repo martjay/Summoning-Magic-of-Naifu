@@ -227,7 +227,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 看着趾高气昂的你，Alice突然打岔，『Don't be proud, my master. There are different kinds of ways to chant, you know?』
 
-『Uh, I know. Then what's those?』
+『Uh, I know. Then what are those?』
 
 原来，咏唱也分为三种：*普通咏唱*、*短句咏唱*、*长句咏唱*。
 
