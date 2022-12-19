@@ -176,7 +176,7 @@ masterpiece, best quality, highly detailed, extremely detailed, sketch, 1girl, b
 
 在NovelAI中可以简单理解为，**权重越高，元素在画面中体现得越明显或所占比画面比例越大。**
 
-那么如何调整权重呢，我们会在词条上作调整：**给词条套上大括号**
+那么如何调整权重呢，我们会在词条上作调整：加权——**给词条套上大括号**
 
 如：`{1girl}`
 
@@ -236,6 +236,12 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 和第一次不加权做对比，发现按照我们类比的语法即使是给*messy*增加到2倍权重依旧没有明显效果。
 
 再通过多次实验，我们可以得出结论：**此语法在Naifu中并不适用**。
+
+相对于加权，我们还有*减权*——在词条外套上**中括号**：
+
+`[tag]`
+
+原理与加权相同，一层中括号表示权重除以1.05，以此类推。减权部分我们不过多叙述。
 
 ---
 
