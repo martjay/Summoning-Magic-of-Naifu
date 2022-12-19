@@ -317,7 +317,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 NovelAI是按照什么顺序来识别魔咒『prompt』并以此生成图像的呢？
 
-答案是**从左往右**的顺序。
+答案是**从左往右**。
 
 NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『tag』。
 根据实践证明及现有理论我们提出了 *空间缠绕理论* 。
@@ -350,7 +350,9 @@ NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『t
 
 >魔咒构析之元素缠绕理论
 
-NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生不同的效果。有些词条可能会相互关联产生更加强烈的效果，而有些相对的词条则可能会相互排斥抵消效果。
+词条间的相互作用：
+
+**NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生不同的效果。有些词条可能会相互关联产生更加强烈的效果，而有些相对的词条则可能会相互排斥抵消效果。**
 
 对此，我们提出*元素缠绕理论*：
 
@@ -411,14 +413,29 @@ NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生�
 
 原来是因为我们的`{flat chest}`词条让NovelAI联想到了loli，造成了零级污染。
 
-那如果我们不想要loli怎么办呢，还记得前面谈到的吗？
->NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生不同的效果。有些词条可能会相互关联产生更加强烈的效果，而有些相对的词条则可能会相互排斥抵消效果。
+那如果我们不想要loli怎么办呢，还记得前面谈到词条间具有相互作用吗？
 
 我们试试在词条`{flat chest}`前加一个词条`{aged up}`来与前面的词条相互作用。
 ```
 {masterpiece}, best quality, {highly detailed}, 1girl, black dress, {aged up}, {flat chest}
 ```
 
-![aged_up](image/aged_up.jpg)
+![aged up](image/aged_up.jpg)
 
-果然，这次就没有那么幼态了。~~拒绝幼态审美，从你我做起(bushi)~~
+果然，这次就没有那么幼态了。~~拒绝幼态审美，从你我做起~~
+
+同样，我们还能反过来利用词条间的相互作用，看到以下魔咒：
+```
+{masterpiece}, best quality, {highly detailed}, 1girl, black dress, {sword}
+```
+
+![without sword](image/without_sword.jpg)
+
+我们本想让女孩拿着剑，但是剑却成了点缀物，这种情况怎么办呢？我们可以利用词条间的相互作用，在词条`{sword}`后面加一个词条`{weapon}`试试：
+```
+{masterpiece}, best quality, {highly detailed}, 1girl, black dress, {sword}, {weapon}
+```
+
+![with sword](image/with_sword.jpg)
+
+这下，少女终于拿起剑。这就是对词条间的相互作用的利用。
