@@ -121,7 +121,7 @@ masterpiece, best quality, highly detailed, 1girl, black long hair, red twinklin
 ```
 其中像 *masterpiece*、*1 girl* 等都算是一个词条，而所有词条组合起来，就是一段魔咒。
 
-注：在Naifu中，魔咒『prompt』 被称为 *Tagging* ，而词条『tag』被称为 *tags*。在本书中，同一使用 *魔咒* 与 *词条* 来定义。
+注：在Naifu中，魔咒『prompt』 被称为 *Tagging* ，而词条『tag』被称为 *tags*。在本书中，统一使用 *魔咒* 与 *词条* 来定义。
 
 >魔咒构析之起手式
 
@@ -176,7 +176,7 @@ masterpiece, best quality, highly detailed, extremely detailed, sketch, 1girl, b
 
 在NovelAI中可以简单理解为，**权重越高，元素在画面中体现得越明显或所占比画面比例越大。**
 
-那么如何调整权重呢，我们会在词条上作调整：加权——**给词条套上大括号**
+那么如何调整权重呢，我们一般会在词条上作调整：加权——**给词条套上大括号**
 
 如：`{1girl}`
 
@@ -241,7 +241,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 `[tag]`
 
-原理与加权相同，一层中括号表示权重除以1.05，以此类推。减权部分我们不过多叙述。
+原理与加权相同，一层中括号表示权重除以1.05，以此类推。减权部分我们不作赘述。
 
 ---
 
@@ -279,7 +279,7 @@ masterpiece, best quality, highly detailed, extremely detailed, 1 girl, black lo
 
 >魔咒构析之长句咏唱
 
-长句咏唱，也可以叫自然语言咏唱，即将多个词条融合成一个词条，且比起普通咏唱更加贴合自然语言，如：
+长句咏唱，也可以叫自然语言咏唱，即将多个相关词条融合成一个词条，且比起普通咏唱更加贴合自然语言，如：
 ```
 {masterpiece}, {{best quality}}, {highly detailed}, {{illustration}}, {1girl with black long messy hair and red twinkling eyes wearing yellow skirt}
 ```
@@ -326,7 +326,7 @@ NovelAI是按照什么顺序来识别魔咒『prompt』并以此生成图像的�
 答案是**从左往右**。
 
 NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『tag』。
-根据实践证明及现有理论我们提出了 *空间缠绕理论* 。
+根据实践证明及现有理论我提出 *空间缠绕理论* 。
 
 **空间缠绕理论：在魔咒中，越靠前的词条将会越受到魔术的眷顾，而越靠后的词条则会成越成为点缀物。**
 
@@ -360,7 +360,7 @@ NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『t
 
 **NovelAI在识别魔咒中的词条时，各词条间会*相互影响*并产生不同的效果。有些词条可能会相互关联产生更加强烈的效果，而有些相对的词条则可能会相互排斥抵消效果。**
 
-对此，我们提出*元素缠绕理论*：
+对此，我提出*元素缠绕理论*：
 
 **元素缠绕理论一：词条间的距离会影响它们之间的关联性。**
 
@@ -428,7 +428,7 @@ NovelAI往往会从左往右依次识别魔咒『prompt』中的每个词条『t
 
 ![aged up](image/aged_up.jpg)
 
-果然，这次就没有那么幼态了。~~拒绝幼态审美，从你我做起。~~
+果然，这次就没有那么幼态了。~~拒绝幼态审美，从你我做起~~
 
 同样，我们还能反过来利用词条间的相互作用，看到以下魔咒：
 ```
